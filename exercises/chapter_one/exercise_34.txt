@@ -1,0 +1,2 @@
+(f f) => (f 2) => (2 2)
+"2" isn't a procedure, so an error comes up.
