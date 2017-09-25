@@ -25,7 +25,7 @@
   (define (is-prime a b) (prime? a))
   (filtered-accumulate add 0 is-prime square a inc b))
 
-(sum-squares-primes 1 18)
+;;; (sum-squares-primes 1 18)
 
 
 
@@ -40,4 +40,6 @@
 (define (product-relatively-prime n)
   (filtered-accumulate multiply 1 relatively-prime identity 1 inc n))
 
-(product-relatively-prime 7)
+;;; (product-relatively-prime 7)
+
+(#%provide prime?)
