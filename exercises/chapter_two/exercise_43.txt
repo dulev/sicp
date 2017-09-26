@@ -1,0 +1,5 @@
+The interchanging of the flatmap makes the process much slower because
+we have to calculate (queen-cols (- k 1)) many more times. We would
+solve the eight-queens puzzle in T^board-size time with the interchange
+because we have now generated a tree-recursive process instead of a linear
+recursive one.
