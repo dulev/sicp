@@ -1,0 +1,6 @@
+If it were the case such that the relative frequencies of the
+symbols are 1, 2, 4, 2^(n-1), the order of growth of the number of steps
+needed to encode the most frequent symbol is O(n) because there is a
+chance that we call 'member' on the bigger subtree. The least frequent
+symbol is encoded in O(n) + O(n-1) + ... + O(1) ~ O(n^2) steps, because
+of the use of the member procedure on each depth level of the tree.
